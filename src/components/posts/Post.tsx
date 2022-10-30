@@ -22,7 +22,7 @@ const Post: React.FC<IPost> = (props) => {
           <p className="post__text">{text}</p>
         </div>
         <div className="post__image">
-          <img src="{image}" alt="image" />
+          <img src={image} alt="image" />
         </div>
       </div>
       <div className="post__icons">
