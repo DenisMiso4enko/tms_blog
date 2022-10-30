@@ -1,0 +1,122 @@
+@import "../../scss/variebles";
+
+.btn {
+  padding: 15px 20px;
+  // border: 1px solid $light;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  // border-radius: $border-radius-base;
+  font-weight: $font-weight-600;
+  font-size: $b1;
+  line-height: $line-height-b2;
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.btn-dislike {
+  transition: background-color 0.3s;
+  border: none;
+  background-color: $light;
+  svg path {
+    transition: fill 0.3s;
+  }
+  &:not([disabled]):hover {
+    background-color: $error;
+    svg path {
+      fill: white;
+    }
+  }
+  &:disabled {
+    background-color: $light;
+    color: $gray;
+  }
+}
+
+.btn-like {
+  transition: background-color 0.3s;
+  border: none;
+  background-color: $light;
+  svg path {
+    transition: fill 0.3s;
+  }
+  &:not([disabled]):hover {
+    background-color: $primary-2;
+    svg path {
+      fill: white;
+    }
+  }
+  &:disabled {
+    background-color: $light;
+    color: $gray;
+    svg path {
+      fill: $gray;
+    }
+  }
+}
+.btn-bookmark {
+  transition: background-color 0.3s, color 0.3s;
+  background-color: $light;
+  border: none;
+  svg path {
+    transition: fill 0.3s;
+  }
+  &:not([disabled]):hover {
+    background-color: rgb(71, 71, 208);
+    color: white !important;
+    svg path {
+      fill: white;
+    }
+  }
+  &:disabled {
+    background-color: $light;
+    color: $gray;
+    svg path {
+      fill: $gray;
+    }
+  }
+}
+
+.btn-secondary2 {
+  background-color: $light;
+  transition: background-color 0.3s;
+  border: none;
+  &:not([disabled]):hover {
+    background-color: $medium;
+  }
+  &:disabled {
+    background-color: $light;
+    color: $gray;
+  }
+}
+
+.btn-secondary {
+  background-color: $extra-light;
+  border-color: $extra-light;
+  transition: border 0.3s;
+
+  &:not([disabled]):hover {
+    border-color: $gray;
+  }
+  &:disabled {
+    background-color: $light;
+    color: $gray;
+  }
+}
+.btn-primary {
+  background-color: $primary;
+  transition: background-color 0.3s;
+  border: none;
+  &:not([disabled]):hover {
+    background-color: $primary-2;
+  }
+  &:disabled {
+    background-color: $light;
+    color: $gray;
+  }
+}
