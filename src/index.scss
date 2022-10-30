@@ -4,35 +4,64 @@
 @import "./scss/mixins";
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
   font-family: "Inter", sans-serif;
+  // background: rgb(201, 201, 201);
+  padding: 50px;
 }
 
-.btn-primary {
-  @include btn-primary;
+// btn
+// .btn-primary {
+//   @include btn-primary;
+// }
+
+// .btn-secondary {
+//   @include btn-secondary;
+// }
+// .btn-secondary2 {
+//   @include btn-secondary2;
+// }
+
+// .btn-dislike {
+//   @include btn-dislike;
+// }
+
+// .btn-like {
+//   @include btn-like;
+// }
+
+form {
+  width: 500px;
+  background-color: $white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-.btn-secondary {
-  @include btn-secondary;
-}
-.btn-secondary2 {
-  @include btn-secondary2;
-}
-
-.btn-icon {
+.post {
   display: flex;
-  gap: 10px;
-  align-items: center;
-  @include btn-icon;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
-.btn-dislike {
-  @include btn-dislike;
+.posts {
+  max-width: 736px;
+}
+.post-aside {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-.btn-like {
-  @include btn-like;
+.posts-2 {
+  max-width: 736px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

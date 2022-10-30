@@ -1,4 +1,7 @@
 export interface ButtonProps {
-  name?: string;
-  logGritting: () => void;
+  text?: string;
+  handelClick?: () => void;
+  color?: string;
+  icon?: any;
+  className: string;
 }
