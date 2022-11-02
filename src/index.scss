@@ -1,38 +1,19 @@
-@import-normalize;
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import "./scss/variebles";
-@import "./scss/mixins";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
   font-family: "Inter", sans-serif;
+  background-color: #E5E5E5;
 }
-
-.btn-primary {
-  @include btn-primary;
-}
-
-.btn-secondary {
-  @include btn-secondary;
-}
-.btn-secondary2 {
-  @include btn-secondary2;
-}
-
-.btn-icon {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  @include btn-icon;
-}
-
-.btn-dislike {
-  @include btn-dislike;
-}
-
-.btn-like {
-  @include btn-like;
+.green {
+  path {
+    fill: green;
+  }
 }

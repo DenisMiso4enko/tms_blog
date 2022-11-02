@@ -1,0 +1,240 @@
+@import "../../scss/variebles";
+
+.btn {
+  padding: 15px 20px;
+  font-family: InterSemiBold, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 16px 32px;
+  border-radius: 2px;
+  background: $primary;
+  color: $white;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.3s;
+  svg path {
+    transition: fill 0.3s;
+    fill: $white;
+  }
+
+  &--primary {
+    background: $primary;
+    &:hover {
+      background: $primary-2;
+    }
+  }
+
+  &--secondary {
+    color: $secondary;
+    background: $light;
+    &:hover {
+      background: $medium;
+    }
+  }
+
+  &--secondary2 {
+    color: $error;
+    background: transparent;
+    &:hover {
+      border: 1px solid $medium;
+    }
+    &:disabled {
+      border: none;
+    }
+  }
+
+  &--with-icon {
+    color: $secondary;
+    background: $light;
+    &:hover {
+      color: $white;
+      background-color: $primary-2;
+      svg path {
+        fill: $white;
+      }
+    }
+    &:disabled {
+      svg path {
+        fill: $gray;
+      }
+    }
+  }
+
+  &--with-icon2 {
+    color: $secondary;
+    background: $light;
+    &:hover {
+      color: $white;
+      background-color: $error;
+      svg path {
+        fill: $white;
+      }
+    }
+    &:disabled {
+      svg path {
+        fill: $gray;
+      }
+    }
+  }
+  &--card {
+    color: $secondary;
+    padding: 0;
+    background: transparent;
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+  &--pagination {
+    color: $secondary;
+    padding: 0;
+    background: transparent;
+    transition: color 0.3s;
+    svg path {
+      transition: fill 0.3s;
+    }
+    &:hover {
+      color: $primary;
+      svg path {
+        fill: $primary;
+      }
+    }
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &--pagination-rev {
+    display: flex;
+    flex-direction: row-reverse;
+    color: $secondary;
+    padding: 0;
+    background: transparent;
+    transition: color 0.3s;
+    svg {
+      margin-left: 14px;
+      transition: fill 0.3s;
+    }
+    &:hover {
+      color: $primary;
+      svg path {
+        fill: $primary;
+      }
+    }
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+  &--burger {
+    // background: transparent;
+    // fill: $white;
+    // svg path {
+    //   fill: $white;
+    // }
+    border-right: 1px solid $primary-2;
+  }
+  &--search {
+    background: transparent;
+    fill: $white;
+    border-right: 1px solid $primary-2;
+    border-left: 1px solid $primary-2;
+    svg path {
+      stroke: $white !important;
+      fill: $white !important;
+    }
+  }
+  &--person {
+    svg path {
+      fill: $primary !important;
+      stroke: $white !important;
+    }
+  }
+
+  &--sign {
+    background: $primary;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 24px;
+    &:hover {
+      background: $primary-2;
+    }
+  }
+
+  &:disabled,
+  &:hover:disabled {
+    color: $gray;
+    background-color: $light;
+    cursor: not-allowed;
+  }
+
+  svg ~ &__text {
+    margin-left: 14px;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  svg path {
+    fill: $secondary;
+  }
+}
+
+.like-count {
+  padding-left: 5px;
+}
+
+// .btn-dislike {
+//   transition: background-color 0.3s;
+//   svg path {
+//     transition: fill 0.3s;
+//   }
+//   &:hover {
+//     background-color: rgb(167, 41, 41);
+//     svg path {
+//       fill: white;
+//     }
+//   }
+// }
+
+// .btn-like {
+//   transition: background-color 0.3s;
+//   svg path {
+//     transition: fill 0.3s;
+//   }
+//   &:hover {
+//     background-color: rgb(34, 141, 34);
+//     svg path {
+//       fill: white;
+//     }
+//   }
+// }
+// .btn-bookmark {
+//   transition: background-color 0.3s, color 0.3s;
+//   svg path {
+//     transition: fill 0.3s;
+//   }
+//   &:hover {
+//     background-color: rgb(71, 71, 208);
+//     color: white !important;
+//     svg path {
+//       fill: white;
+//     }
+//   }
+// }
+
+// .btn-secondary {
+//   background-color: white;
+//   &:hover {
+//     border: 1px solid gray;
+//   }
+// }
