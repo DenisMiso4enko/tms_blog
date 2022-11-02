@@ -1,0 +1,26 @@
+@import "../../scss/variebles";
+
+.form-wrapper {
+  max-width: 624px;
+  margin: 0 auto;
+  padding: 40px;
+  border: 1px solid $medium;
+}
+.form-sign {
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 48px;
+  }
+  &__info {
+    text-align: center;
+    font-weight: 500;
+    font-size: $b1;
+    line-height: 20px;
+    color: $gray;
+    a {
+      color: $primary;
+    }
+  }
+}
