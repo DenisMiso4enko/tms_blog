@@ -11,6 +11,19 @@
 # production
 /build
 
+
+AuthPageWrapper
+Card
+ConfimRegistration
+Footer
+Forms
+Header
+Input
+MainBlog
+Pagination
+Tabs
+
+
 # misc
 .DS_Store
 .env.local
