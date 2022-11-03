@@ -1,0 +1,22 @@
+@import "../../scss/variebles";
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 33px 0;
+  border-top: 1px solid $gray;
+  margin-top: auto;
+  &__date {
+    color: $gray;
+    font-weight: $font-weight-400;
+    font-size: $b2;
+    line-height: $line-height-b2;
+  }
+  &__rights {
+    color: $gray;
+    font-weight: $font-weight-400;
+    font-size: $b2;
+    line-height: $line-height-b2;
+  }
+}

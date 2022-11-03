@@ -1,0 +1,18 @@
+@import "../../scss/variebles";
+
+.confim-wrapper {
+  max-width: 624px;
+  margin: 0 auto;
+  padding: 40px;
+  border: 1px solid $medium;
+}
+
+.confim__text {
+  margin-bottom: 60px;
+  font-size: $b1;
+  line-height: $line-height-b1;
+  color: $secondary;
+  span {
+    font-weight: $font-weight-700;
+  }
+}

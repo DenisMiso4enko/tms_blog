@@ -1,0 +1,34 @@
+@import "../../scss/variebles";
+
+.filter-tabs {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  border-bottom: 1px solid $medium;
+}
+
+.filter-tabs__item {
+  position: relative;
+  padding: 0 40px 24px;
+  //   max-width: 120px;
+  font-weight: $font-weight-600;
+  font-size: $b1;
+  line-height: $line-height-s1;
+  color: $secondary;
+  transition: width 0.3s, color 0.3s;
+  cursor: pointer;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: $secondary;
+}

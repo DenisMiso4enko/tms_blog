@@ -1,0 +1,17 @@
+@import "../../scss/variebles";
+
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: $primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__menu {
+  }
+  &__btns {
+    display: flex;
+  }
+}
