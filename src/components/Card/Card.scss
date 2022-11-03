@@ -1,0 +1,124 @@
+@import "../../scss/variebles";
+
+.card {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    max-width: 448px;
+    margin-bottom: 31px;
+  }
+  &__date {
+    font-weight: $font-weight-400;
+    font-size: $b1;
+    line-height: $line-height-b2;
+    color: $gray;
+    margin-bottom: 8px;
+  }
+  &__title {
+    margin-bottom: 24px;
+    a {
+      text-decoration: none;
+      font-weight: $font-weight-700;
+      font-size: $h2;
+      line-height: $line-height-h2;
+      color: $secondary;
+      margin-bottom: 24px;
+      transition: color 0.3s;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  &__desc {
+    font-weight: $font-weight-400;
+    font-size: $b1;
+    line-height: $line-height-h3;
+    color: $gray;
+    margin-bottom: 8px;
+  }
+  &__image-wrappe {
+    max-width: 256px;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid $medium;
+  }
+  &__icons-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  &__icons-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+.card--xl {
+  max-width: 736px;
+}
+.card--md {
+  max-width: 352px;
+  .card__top {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .card__image-wrapper {
+    height: 246px;
+    margin-bottom: 10px;
+    img {
+      height: 100%;
+    }
+  }
+  .card__title {
+    a {
+      font-size: $h3-sm;
+      font-weight: $font-weight-600;
+      line-height: $line-height-h3-sm;
+    }
+  }
+  .card__desc {
+    display: none;
+  }
+  .card__info {
+    margin-bottom: 28px;
+  }
+}
+.card--sm {
+  max-width: 352px;
+  .card__top {
+    display: flex;
+  }
+  .card__image-wrapper {
+    max-height: 246px;
+    margin-bottom: 10px;
+    img {
+      height: auto;
+    }
+  }
+  .card__title {
+    a {
+      font-size: $h3-sm;
+      font-weight: $font-weight-600;
+      line-height: $line-height-h3-sm;
+    }
+  }
+  .card__desc {
+    display: none;
+  }
+  .card__info {
+    margin-bottom: 28px;
+  }
+}
